@@ -703,3 +703,34 @@ body {
 }
 
 /* EVENT LAYOUT */
+
+.event-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event-form__info {
+  flex: 1 1 425px;
+}
+
+.event-form__tip {
+  /* Grow to fill the container taking up 3x amount of free space*/
+  flex: 3 1 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form labels beside the input on larger screens */
+.event-form__field {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1; /* take up extra space */
+}
+
+.event-form__input {
+  flex: 1 1 275px;
+}
+
+.event-form__submit {
+  align-self: flex-end;
+}
